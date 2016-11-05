@@ -10,9 +10,9 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-     # find the user record
-    @user = User.find(params[:id])
-    @micropost = @user.microposts.first
+     # find the user record, commented out for heroku deployment
+    #@user = User.find(params[:id])
+    #@micropost = @user.microposts.first
   end
 
   # GET /users/new
