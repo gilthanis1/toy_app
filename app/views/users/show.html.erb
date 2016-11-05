@@ -10,10 +10,11 @@
   <%= @user.email %>
 </p>
 
+<!-- The below lines are commented out for Heroku operation, but function in local server.
 <p>
 	<strong>First Post:</strong>
 	<%= @micropost.content %>
-</p>
+</p> -->
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
